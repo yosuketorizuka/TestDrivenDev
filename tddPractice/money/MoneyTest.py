@@ -1,14 +1,14 @@
 import unittest
 
 # テストをしたいモジュールをimportする
-import dollar
+import Dollar
 
 # クラス名はなんでもよいが、unittest.TestCaseの継承は必要
 class MoneyTest(unittest.TestCase):
 
     def testMutiplication(self):
            
-        five = dollar.Dollar(5)
+        five = Dollar.Dollar(5)
         
         product = five.times(2)
         self.assertEqual(10, product.amount)
@@ -17,8 +17,8 @@ class MoneyTest(unittest.TestCase):
         self.assertEqual(15, product.amount)
 
     def testEquality(self):
-        self.assertTrue(dollar.Dollar(5).equals(dollar.Dollar(5)))
-        self.assertFalse(dollar.Dollar(5).equals(dollar.Dollar(6)))
+        self.assertTrue(Dollar.Dollar(5).equals(Dollar.Dollar(5)))
+        self.assertFalse(Dollar.Dollar(5).equals(Dollar.Dollar(6)))
 
 if __name__ == '__main__':
     unittest.main()
