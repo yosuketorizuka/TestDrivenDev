@@ -1,5 +1,4 @@
 class Dollar:
-    
     def __init__(self, arg):
         self.amount = arg
     
