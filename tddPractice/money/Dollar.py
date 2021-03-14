@@ -1,5 +1,4 @@
 class Dollar:
-
     def __init__(self, arg):
         self.amount = arg
     
@@ -7,5 +6,5 @@ class Dollar:
         return Dollar(self.amount * multiplier)
 
     def equals(self, object):
-        Dollar.dollar = object
+        Dollar.Dollar = object
         return self.amount == object.amount
